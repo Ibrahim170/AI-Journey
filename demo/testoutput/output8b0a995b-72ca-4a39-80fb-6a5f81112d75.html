@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Most Popular Job Titles</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Most Popular Job Titles',
+    height: 700,
+    width: 900,
+
+
+};
+
+var trace0 =
+{
+x: [17.0, 18.0, 21.0, 23.0, 24.0, 25.0, 26.0, 43.0, 47.0, 57.0],
+y: ["Marketing Specialist","Sales Executive","Executive Secretary","Receptionist","Social Media Specialist","Sales Manager","Digital Marketing Specialist","Graphic Designer","Sales Representative","Accountant"],
+orientation: 'h',
+xaxis: 'x',
+yaxis: 'y',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
